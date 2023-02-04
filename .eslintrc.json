@@ -4,11 +4,21 @@
     "plugin:import/errors",
     "plugin:react/recommended",
     "plugin:jsx-a11y/recommended",
+    "plugin:react-hooks/recommended",
     "prettier"
   ],
   "rules": {
     "react/prop-types": 0,
-    "react/react-in-jsx-scope": 0
+    "react/react-in-jsx-scope": 0,
+    "max-len": [1, 120, 2, { "ignoreComments": true }],
+    "jsx-a11y/no-onchange": "off",
+    "no-console": "off",
+    "camelcase": ["error", { "properties": "always" }],
+    "semi": ["warn", "always"],
+    "no-unused-vars": [
+      "warn",
+      { "vars": "all", "args": "after-used", "ignoreRestSiblings": false }
+    ]
   },
   "plugins": ["react", "import", "jsx-a11y"],
   "parserOptions": {
