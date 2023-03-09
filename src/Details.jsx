@@ -9,7 +9,6 @@ import AdoptedPetContext from "./AdoptedPetContext";
 
 const Details = () => {
     const {id} = useParams();
-    // if details with id of 1 (for example) isn't in cache, it will call fetchPet
     const results = useQuery(["details", id], fetchPet);
     const [showModal, setShowModal] = useState(false);
     const navigate = useNavigate();

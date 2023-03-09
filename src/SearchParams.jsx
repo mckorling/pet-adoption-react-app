@@ -55,11 +55,6 @@ const SearchParams = () => {
                         onChange={(e) => {
                             updateAnimal(e.target.value); 
                         }}
-                        // onBlur={(e) => {
-                        //     updateAnimal(e.target.value);
-                        //     updateBreed("");
-                        // }}
-                        // this used to be needed for a11y reqs
                     >
                     <option/>
                         {ANIMALS.map((animal) => (
@@ -74,8 +69,6 @@ const SearchParams = () => {
                         disabled={!breeds.length}
                         id="breed"
                         name="breed"
-                        // onChange={(e) => updateBreed(e.target.value)}
-                        // onBlur={(e) => updateBreed(e.target.value)}
                     >
                     <option />
                         {breeds.map((breed) => (

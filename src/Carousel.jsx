@@ -9,7 +9,6 @@ class Carousel extends Component {
         images: ["http://pets-images.dev-apis.com/pets/none.jpg"],
     };
 
-    // add event listener
     handleIndexClick = event => {
         this.setState({
         active: +event.target.dataset.index

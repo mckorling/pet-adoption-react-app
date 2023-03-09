@@ -10,15 +10,13 @@ const queryClient = new QueryClient({
   defaultOptions: {
     queries: {
       staleTime: Infinity,
-      cacheTime: Infinity, // how long should things be cached for. Infinity: once you fetch something, don't refetch it
+      cacheTime: Infinity, 
     }
   }
 });
 
-// will be rendered once
 const App = () => {
   const adoptedPet = useState(null);
-  // type of tag, {} can carry attributes/props like ids, any children elements
   return (
     <div>
       <BrowserRouter>
@@ -40,4 +38,4 @@ const App = () => {
 
 const container = document.getElementById('root');
 const root = createRoot(container);
-root.render(<App/>); // App is being rendered to root
+root.render(<App/>); 
